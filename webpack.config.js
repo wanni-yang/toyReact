@@ -17,6 +17,25 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        fallback: {
+            "util": false,
+            "path": false,
+            "crypto": false,
+            "https": false,
+            "http": false,
+            "vm": false,
+            "os": false,
+            "fs": false,
+            "buffer": false,
+            "stream": false,
+            "worker_threads": false,
+            "child_process": false,
+            "constants": false,
+            "assert": false,
+            "pnpapi": false,
+        }
+    },
     mode: "development",
     optimization: {
         minimize: false
